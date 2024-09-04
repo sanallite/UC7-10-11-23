@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: #333333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.erro {
+    color: #F44;
+}
+
+.formulario {
+    padding-top: 50px;
+    margin-left: 400px;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    background-color:  #2F4C73;
+    height: 90vh;
+    border: 2px #333333 solid;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+fieldset {
+    border: 2px solid #6d6d6e;
+    color: #333333;
+    margin: 10px 0 0 0;
+    border-radius: 10px;
+
+}
+legend{
+    margin-top: 20px;
+    color:#030303;
+    margin-top: -10px;
+}
+#prioridade {
+    margin: 10px;
+    padding: 10px;
+
+    width: 200px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-top: 20px;
+    background-color: #a0b6db;
+}
+
+/* legend {
+    margin-top: 100px;
+} */
+
+.conclusao {
+    margin-top: -60px;
+    margin-left: 420px;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin: 10px 5px 0 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 200;
+
+}
+
+input[type=text],
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    width: 90%;
+    border: 1px solid #555;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    margin: 60px 80px 15px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    float: right;
+    clear: both;
+    background-color: #a0b6db;
+    border: 1px solid #000000;
+    padding: 7px;
+    color: #000000;
+    border-radius: 8px;
+}
+button{
+    margin: 30px 80px 15px 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+ /*    clear: both; */
+    background-color: #a0b6db;
+    border: 1px solid #000000;
+    padding: 10px;
+    color: #000000;
+    border-radius: 8px;
+}
+
+
+table {
+    width: 90%;
+    margin-left: 100px;
+    border: 1px solid #333333;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 1px solid #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+tr td {
+    border: 1px solid #333333;
+    text-align: center;
+}
+
+td img {
+    width: 100px;
+}

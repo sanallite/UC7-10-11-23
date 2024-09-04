@@ -1,0 +1,60 @@
+body {
+    width: 60%;
+    margin: auto;
+    background-color: gainsboro;
+}
+
+h1 {
+    text-align: center;
+    color: blue
+}
+
+.texto label {
+    display: block;
+    width: 15%;
+    float: left;
+}
+
+.texto input {
+    display: block;
+    width: 30%;
+}
+
+.texto textarea {
+    display: block;
+    width: 30%;
+}
+
+fieldset {
+    border-color: black;
+}
+
+fieldset:first-of-type {
+    margin-bottom: 1em;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1em auto;
+}
+
+table th, table td {
+    padding: 1em;
+    border: solid thin black;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+td img {
+    max-width: 100px;
+}

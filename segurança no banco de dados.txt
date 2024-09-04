@@ -1,0 +1,25 @@
+dicas de segurança para evitar ATAQUES ao banco de dados. 
+
+1º não enviar aquivos diretamente para seu banco de dados. (criamos uma pasta paralela no servidor)
+2º limitar o tamanho dos arquivos, assim não há possibilidade de congelamento /crash dos sistemas de segurança, com a exaustão de um arquivo muito grande enviado.
+3º alterar o nome do arquivo enviado (evitando assim que esse arquivo sirva em um ataque)
+4º alterar um pouco a codificação do PHP trabalhando com consulta preparada e com passagem de parâmetros, evitando assim que qualquer coisa seja enviada utilizando a programação SQL. 
+
+
+EXPLICAÇÃO DA CONSULTA PREPARADA E SEUS COMANDOS. 
+
+O comando mysqli_stmt_execute($stmt) é utilizado para executar uma consulta preparada no MySQLi em PHP. Vamos entender o que cada parte do comando faz:
+
+mysqli_stmt_execute: Esta é a função que execuºta a consulta preparada. Ela recebe como argumento o ponteiro para o objeto de declaração preparada ($stmt), que contém a consulta SQL preparada.
+
+$stmt: É o ponteiro para o objeto de declaração preparada. Este objeto representa a consulta SQL que foi preparada anteriormente usando mysqli_prepare. Contém informações sobre a consulta e os parâmetros vinculados.
+
+Quando mysqli_stmt_execute($stmt) é chamado, a consulta preparada é enviada para o servidor MySQL para execução. O servidor MySQL irá processar a consulta, substituir os placeholders pelos valores fornecidos e realizar a operação no banco de dados.
+
+Alguns pontos importantes:
+
+Segurança contra Injeção de SQL: O uso de consultas preparadas, combinado com mysqli_stmt_bind_param, ajuda a prevenir ataques de injeção de SQL. Isso ocorre porque os valores dos parâmetros são tratados separadamente da instrução SQL principal, evitando que dados não confiáveis causem problemas de segurança.
+
+Retorno de Sucesso ou Falha: O retorno de mysqli_stmt_execute($stmt) será true se a execução for bem-sucedida e false se houver algum erro. Você pode usar isso para tomar decisões no seu código, como exibir mensagens de sucesso ou erro.
+
+Verificação de Linhas Afetadas: Após a execução, você pode usar mysqli_stmt_affected_rows($stmt) para verificar quantas linhas foram afetadas pela operação (por exemplo, quantas linhas foram inseridas, atualizadas ou deletadas). Isso é útil para determinar se a operação foi concluída com êxito.
